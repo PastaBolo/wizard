@@ -1,8 +1,6 @@
 import { Component } from '@angular/core'
 import { trigger, transition, group, query, style, animate } from '@angular/animations'
 
-import { stepsRoutes } from './steps/steps.routes'
-
 @Component({
   selector: 'app-wizard',
   templateUrl: './wizard.component.html',
@@ -32,6 +30,4 @@ import { stepsRoutes } from './steps/steps.routes'
     ])
   ]
 })
-export class WizardComponent {
-  steps = stepsRoutes
-}
+export class WizardComponent {}

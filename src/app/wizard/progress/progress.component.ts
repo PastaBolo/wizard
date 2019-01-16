@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { Step } from 'src/app/wizard.directive'
+import { Routes } from '@angular/router'
 
 @Component({
   selector: 'app-progress',
@@ -7,5 +7,5 @@ import { Step } from 'src/app/wizard.directive'
   styleUrls: ['./progress.component.scss']
 })
 export class ProgressComponent {
-  @Input() steps: Step[]
+  @Input() steps: Routes
 }

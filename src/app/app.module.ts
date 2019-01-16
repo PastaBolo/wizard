@@ -10,7 +10,8 @@ import { StepTwoComponent } from './wizard/steps/step-two.component'
 import { StepThreeComponent } from './wizard/steps/step-three.component'
 import { WizardComponent } from './wizard/wizard.component'
 import { ProgressComponent } from './wizard/progress/progress.component'
-import { TitleComponent } from './wizard/title/title.component'
+import { TitleComponent } from './wizard/title/title.component';
+import { StepNavComponent } from './wizard/steps/step-nav.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TitleComponent } from './wizard/title/title.component'
     StepThreeComponent,
     WizardComponent,
     ProgressComponent,
-    TitleComponent
+    TitleComponent,
+    StepNavComponent
   ],
   imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [],
