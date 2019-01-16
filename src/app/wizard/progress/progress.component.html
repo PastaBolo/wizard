@@ -1,0 +1,3 @@
+<a *ngFor="let step of steps; let i = index" [routerLink]="step.path" routerLinkActive="active">
+  <span>{{ i + 1 }}</span>
+</a>

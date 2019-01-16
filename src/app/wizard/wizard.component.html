@@ -1,0 +1,10 @@
+<div [wizard]="steps" #wizard="wizard">
+  <app-progress [steps]="wizard.steps"></app-progress>
+  {{ wizard.currentStepIndex + 1 }} / {{ wizard.steps.length }}
+  <app-title [tmpl]="wizard.currentInstance?.titleTmpl"></app-title>
+  <div [@slide]="wizard.currentStepIndex" style="height: 50px">
+    <router-outlet></router-outlet>
+  </div>
+  <button (click)="wizard.previous()">previous</button>
+  <button (click)="wizard.next()">next</button>
+</div>
